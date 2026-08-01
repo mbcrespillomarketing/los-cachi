@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Cachi</title>
+<style>
+
+body {
+  background-image: url("DSC_4531.jpg");
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px 8px black
+}
+
+img {
+  border-radius: 10px;
+}
+.boton {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  margin: -40px 30px 20px 30px;
+  text-shadow: 2px 2px 6px black;
+  transition: 0.3s;
+}
+.boton:hover{color:#FFD700}
+
+.slogan {
+  color: white;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.grito {
+  color: #FFD700;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px black;
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+.logo {
+  width: 600px;
+  height: auto;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 220px auto 20px  auto;
+}
+
+.logo {
+    width: 550px;
+    height: auto;
+    animation: aparecer 1.5s ease
+}
+
+.productora {
+  width: 120px !important;
+  height: auto !important;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.grito {
+    font-size: 55px;
+    margin: 0;
+    color: #FFD700;
+    text-shadow: 5px 5px 10px black;
+    padding-top: 40px;
+
+    opacity: 0;
+    animation: aparecer 1.5s ease forwards;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+<body>
+<a class="boton show" href="show.jpeg">🎟️ Ver detalles del show</a>
+
+<a class="boton" href="https://www.instagram.com/loscachi?igsh=cnJrY2hvbXhpcjVz">
+📸 Instagram de Los Cachi
+</a>
+
+<a class="boton whatsapp" href="https://wa.me/2345439282">
+💬 Contrataciones
+</a>
+
+<a class="boton" href="galeria.html" target="_blank">
+📷 Galería de fotos
+</a>
+
+<a 
+href="https://www.instagram.com/ella_es_ella_producciones?igsh=cXUweXVyYzU1M2h6" target="_blank">
+<img src="Ella es ella blanco.jpeg" alt="productora" class="productora">
+</a>
+<div class="encabezado">
+    <img src="sin fondo.png" alt="Los Cachi" class="logo">
+
+    <p class="grito">¡CLARO QUE SÍ!</p>
+</div>
+</body>
+</html>
