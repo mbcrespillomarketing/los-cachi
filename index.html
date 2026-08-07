@@ -62,7 +62,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 220px auto 20px  auto;
+    margin: 320px auto 20px  auto;
 }
 
 .logo {
@@ -72,11 +72,9 @@ img {
 }
 
 .productora {
-  width: 120px !important;
-  height: auto !important;
-  position: absolute;
-  top: 10px;
-  left: 20px;
+  width: 120px;
+  height: auto;
+  margin-right: 25px;
 }
 
 .grito {
@@ -100,6 +98,35 @@ img {
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+
+  .encabezado {
+    flex-direction: column;
+    margin: 140px auto 20px auto;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .productora {
+    width: 90px;
+    margin-bottom: 15px;
+  }
+
+  .grito {
+    font-size: 40px;
+    padding-top: 0;
+  }
+
+  .boton {
+    display: block;
+    margin: 15px auto;
+    font-size: 20px;
+  }
+}
 </style>
 </head>
 <body>
@@ -117,14 +144,17 @@ img {
 📷 Galería de fotos
 </a>
 
-<a 
-href="https://www.instagram.com/ella_es_ella_producciones?igsh=cXUweXVyYzU1M2h6" target="_blank">
-<img src="Ella es ella blanco.jpeg" alt="productora" class="productora">
-</a>
 <div class="encabezado">
+
+    <a href="https://www.instagram.com/ella_es_ella_producciones?igsh=cXUweXVyYzU1M2h6" target="_blank">
+        <img src="Ella es ella blanco.jpeg" alt="productora" class="productora">
+    </a>
+
     <img src="sin fondo.png" alt="Los Cachi" class="logo">
 
     <p class="grito">¡CLARO QUE SÍ!</p>
+
 </div>
+
 </body>
 </html>
